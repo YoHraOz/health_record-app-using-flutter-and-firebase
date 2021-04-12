@@ -6,19 +6,12 @@ In firebase Storage change rules to :
 
 
 rules_version = '2';
-
 service firebase.storage {
-
   match /b/{bucket}/o {
-
     match /{allPaths=**} {
-
       allow read, write;
-
     }
-
   }
-
 }
 
 And you are good to go
